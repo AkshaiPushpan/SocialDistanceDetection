@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Walk</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="particles-js">
+      <div class="content">
+        <header class="header">
+          <div class="" id="logo">Safe Walk</a></div>
+          <div class="menu"></div>
+        </header>
+        <section class="main">
+          <p class="caption" id="caption">
+            A Project rendered to minimize the spread of Corona virus and to
+            impart knowledge into people about the importance of maintaining
+            proper social distancing...
+          </p>
+          <button class="btn"> <a class="x" href="/my-link/">Get Started</a> <i class="fa fa-angle-right"></i> </button>
+          </button>
+        </section>
+        <footer class="footer">
+          <div class="pages">
+            <ul>
+              <li class="list-item"><a href="{{ url_for('index') }} ">01 - Home</a></li>
+              <li class="list-item"><a href="{{ url_for('contact') }}">02 - Contact</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='particles.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='app.js') }}"></script>
+  </body>
+</html>
